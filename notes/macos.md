@@ -1,0 +1,41 @@
+# macOS System Settings
+
+## Keyboard — Remap Modifier Keys
+
+Swap Globe/Fn and Caps Lock, make Caps Lock act as Escape:
+
+1. Open **System Settings** → **Keyboard** → **Keyboard Shortcuts…** → **Modifier Keys**
+2. Set:
+   - **Caps Lock (⇪) key** → Escape (⎋)
+   - **Globe (🌐) key** → Caps Lock (⇪)
+
+## Dock
+
+- **System Settings** → **Desktop & Dock**
+  - Disable "Show recent applications in Dock"
+
+Or via CLI (see `notes/clear-dock.md`):
+
+```bash
+defaults write com.apple.dock show-recents -bool false && killall Dock
+```
+
+## Trackpad
+
+- **System Settings** → **Trackpad**
+  - Enable Tap to Click
+  - Adjust tracking speed
+
+## Screenshots
+
+Save screenshots to Downloads instead of Desktop:
+
+```bash
+defaults write com.apple.screencapture location ~/Downloads && killall SystemUIServer
+```
+
+## Finder
+
+- **Finder** → **Settings** (⌘,)
+  - Show file extensions
+  - Set default view to list
