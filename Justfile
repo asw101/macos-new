@@ -13,6 +13,7 @@ git-config:
     @echo "Configuring git from GitHub profile..."
     git config --global user.name "$(gh api user --jq '.name')"
     git config --global user.email "$(gh api user --jq '"\(.login)@users.noreply.github.com"')"
+    git config --global core.ignorecase false
     @echo "Set user.name = $(git config --global user.name)"
     @echo "Set user.email = $(git config --global user.email)"
 
