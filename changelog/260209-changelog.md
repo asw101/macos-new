@@ -27,3 +27,12 @@
 - Set screenshots to save to `~/Downloads`
 - Set `git config --global core.ignorecase false` for case-sensitive file tracking
 - Updated `justfile` git-config recipe with `core.ignorecase false`
+- Renamed `justfile` → `Justfile`
+- Verified Homebrew cask availability for all apps
+- Fixed Ecamm Live cask name (`ecamm-live`)
+- Updated coding agents to use `--cask` installs and `copilot-cli@prerelease`
+- Created `notes/vscode.md` — VS Code extensions and config restore
+- Installed coding agents via `just install-agents` (Claude Code, Copilot CLI, Codex CLI)
+- Configured macOS keyboard shortcuts (Caps Lock → Escape, Globe → Caps Lock)
+- Installed 1Password (`brew install --cask 1password`)
+- Installed Windows App from Mac App Store (for remote Windows virtual desktop)

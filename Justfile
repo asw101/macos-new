@@ -37,13 +37,12 @@ install-cli:
 
 # install coding agents
 install-agents:
-    brew install claude-code codex
-    gh extension install github/gh-copilot
+    brew install --cask claude-code codex copilot-cli@prerelease
 
 # install GUI apps via brew cask
 install-apps:
     brew install --cask 1password chatgpt docker rectangle
-    brew install --cask audio-hijack fission loopback
+    brew install --cask ecamm-live audio-hijack fission loopback
 
 # install everything (CLI + agents + apps)
 install-all: install-cli install-agents install-apps
