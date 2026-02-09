@@ -36,3 +36,4 @@
 - Configured macOS keyboard shortcuts (Caps Lock → Escape, Globe → Caps Lock)
 - Installed 1Password (`brew install --cask 1password`)
 - Installed Windows App from Mac App Store (for remote Windows virtual desktop)
+- Installed Ecamm Live, Audio Hijack, Fission, Loopback, MacWhisper via brew cask

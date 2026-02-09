@@ -17,6 +17,7 @@ Prefer `brew install` (or `brew install --cask` for GUI apps) wherever possible.
 | ChatGPT | `brew install --cask chatgpt` |
 | Docker Desktop | `brew install --cask docker` |
 | Ecamm Live | `brew install --cask ecamm-live` |
+| MacWhisper | `brew install --cask macwhisper` |
 | Rectangle | `brew install --cask rectangle` |
 | Rogue Amoeba Audio Hijack | `brew install --cask audio-hijack` |
 | Rogue Amoeba Fission | `brew install --cask fission` |
