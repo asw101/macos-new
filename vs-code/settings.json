@@ -1,0 +1,56 @@
+{
+    "terminal.integrated.fontSize": 24,
+    "editor.fontSize": 24,
+    "debug.console.fontSize": 24,
+    "githubPullRequests.remotes": [
+        "origin",
+        "upstream",
+        "live"
+    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "ai.azureml.experimental: V2Config": true,
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": false,
+        "yaml": false,
+        "plaintext": false,
+        "markdown": false,
+        "go": false
+    },
+    "tabnine.experimentalAutoImports": true,
+    "explorer.confirmDelete": false,
+    "rust.rust-analyzer": {
+        "releaseTag": "nightly",
+        "path": null
+    },
+    "extensions.ignoreRecommendations": true,
+    "editor.wordWrap": "on",
+    "security.workspace.trust.untrustedFiles": "open",
+    "dotnetAcquisitionExtension.existingDotnetPath": [
+        {
+             "extensionId": "msazurermtools.azurerm-vscode-tools",
+             "path": "/usr/local/share/dotnet/dotnet"
+        },
+        {
+            "extensionId": "ms-azuretools.vscode-bicep",
+            "path": "/usr/local/share/dotnet/dotnet"
+        }
+    ],
+    "markdownlint.customRules": [
+        "{docsmsft.docs-linting}/markdownlint-custom-rules/rules.js"
+    ],
+    "diffEditor.renderSideBySide": false,
+    "go.toolsManagement.autoUpdate": true,
+    "docs-build.userType": "Microsoft Employee",
+    "git.alwaysSignOff": true,
+    "workbench.startupEditor": "none",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "redhat.telemetry.enabled": false,
+    "explorer.confirmDragAndDrop": false,
+    "terminal.integrated.stickyScroll.enabled": false,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "python.defaultInterpreterPath": "/opt/homebrew/bin/python3.13"
+}

@@ -1,0 +1,25 @@
+# Changelog — 2026-02-09
+
+- Created `notes/clear-dock.md` — guide to remove all Dock items and disable recent apps via CLI
+- Updated `TODO.md` — added 1Password, ChatGPT desktop app
+- Updated `TODO.md` — added Ecamm Live, Rogue Amoeba Loopback, Audio Hijack, Fission
+- Created `notes/passwords.md` — 1Password setup notes (skipping browser extensions)
+- Updated `TODO.md` — added Claude Code, GitHub Copilot CLI, OpenAI Codex CLI
+- Ran Dock cleanup commands (cleared persistent apps/others, disabled show-recents)
+- Installed Homebrew
+- Created `changelog/` folder for day-stamped change logs
+- Set minimal zsh prompt (`export PROMPT='$ '`) in `~/.zshrc`
+- Created `notes/zsh.md` — zsh config notes with old `.zshrc` reference
+- Copied VS Code Insiders `settings.json` and `keybindings.json` from old volume
+- Created `vs-code/` folder with backup copies of both config files
+- Renamed `TODO.md` → `260209-TODO.md`, removed `260200-1.md`
+- Added `just` to TODO (`brew install just`)
+- Created `notes/just.md` — just command runner install guide
+- Installed Git (`brew install git`)
+- Installed GitHub CLI (`brew install gh`)
+- Authenticated with `gh auth login`
+- Configured git name and noreply email via `just git-config`
+- Created `justfile` with automation recipes
+- Created `notes/applications.md` — central app install list (brew-first)
+- Updated `AGENTS.md` — added justfile, applications.md, brew preference
+- Created GitHub repo `asw101/macos-new` and pushed
