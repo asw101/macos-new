@@ -39,3 +39,13 @@ defaults write com.apple.screencapture location ~/Downloads && killall SystemUIS
 - **Finder** → **Settings** (⌘,)
   - Show file extensions
   - Set default view to list
+
+## Rosetta 2
+
+Required for Docker Desktop x86_64 emulation on Apple Silicon:
+
+```bash
+softwareupdate --install-rosetta --agree-to-license
+```
+
+Then enable in Docker Desktop → **Settings** → **General** → **Use Rosetta for x86_64/amd64 emulation on Apple Silicon**.

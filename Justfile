@@ -45,6 +45,14 @@ install-apps:
     brew install --cask 1password chatgpt docker rectangle
     brew install --cask ecamm-live audio-hijack fission loopback macwhisper
 
+# install Rosetta 2 (needed for Docker x86_64 emulation)
+install-rosetta:
+    softwareupdate --install-rosetta --agree-to-license
+
+# save screenshots to Downloads
+setup-screenshots:
+    defaults write com.apple.screencapture location ~/Downloads && killall SystemUIServer
+
 # install everything (CLI + agents + apps)
 install-all: install-cli install-agents install-apps
 

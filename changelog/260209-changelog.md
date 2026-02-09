@@ -39,3 +39,5 @@
 - Installed Ecamm Live, Audio Hijack, Fission, Loopback, MacWhisper via brew cask
 - Installed ChatGPT desktop app (`brew install --cask chatgpt`)
 - Installed Rectangle (window management)
+- Installed Docker Desktop (`brew install --cask docker`)
+- Installed Rosetta 2 (`softwareupdate --install-rosetta`) for Docker x86_64 emulation
