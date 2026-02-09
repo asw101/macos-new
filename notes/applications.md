@@ -18,11 +18,13 @@ Prefer `brew install` (or `brew install --cask` for GUI apps) wherever possible.
 | Docker Desktop | `brew install --cask docker` |
 | Ecamm Live | `brew install --cask ecamm-live` |
 | MacWhisper | `brew install --cask macwhisper` |
+| Microsoft Edge | `brew install --cask microsoft-edge` |
 | Rectangle | `brew install --cask rectangle` |
 | Rogue Amoeba Audio Hijack | `brew install --cask audio-hijack` |
 | Rogue Amoeba Fission | `brew install --cask fission` |
 | Rogue Amoeba Loopback | `brew install --cask loopback` |
 | Windows App | [Mac App Store](https://apps.apple.com/app/windows-app/id1295203466) |
+| VS Code Insiders | `brew install --cask visual-studio-code@insiders` |
 
 ## Coding Agents
 

@@ -37,3 +37,5 @@
 - Installed 1Password (`brew install --cask 1password`)
 - Installed Windows App from Mac App Store (for remote Windows virtual desktop)
 - Installed Ecamm Live, Audio Hijack, Fission, Loopback, MacWhisper via brew cask
+- Installed ChatGPT desktop app (`brew install --cask chatgpt`)
+- Installed Rectangle (window management)

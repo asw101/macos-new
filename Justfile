@@ -41,6 +41,7 @@ install-agents:
 
 # install GUI apps via brew cask
 install-apps:
+    brew install --cask visual-studio-code@insiders microsoft-edge
     brew install --cask 1password chatgpt docker rectangle
     brew install --cask ecamm-live audio-hijack fission loopback macwhisper
 
@@ -89,6 +90,9 @@ check:
     check_app "Audio Hijack"
     check_app "Fission"
     check_app "Loopback"
+    check_app "MacWhisper"
+    check_app "Microsoft Edge"
+    check_app "Visual Studio Code - Insiders"
     check_app "Windows App"
     echo ""
     echo "Config:"
