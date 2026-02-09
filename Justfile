@@ -46,3 +46,54 @@ install-apps:
 
 # install everything (CLI + agents + apps)
 install-all: install-cli install-agents install-apps
+
+# verify all expected tools and apps are installed
+check:
+    #!/usr/bin/env bash
+    pass=0
+    fail=0
+    check() {
+        if command -v "$1" &>/dev/null || [ -d "/Applications/$2" ]; then
+            echo "  ✓ $1"
+            ((pass++))
+        else
+            echo "  ✗ $1"
+            ((fail++))
+        fi
+    }
+    check_app() {
+        if [ -d "/Applications/$1.app" ]; then
+            echo "  ✓ $1"
+            ((pass++))
+        else
+            echo "  ✗ $1"
+            ((fail++))
+        fi
+    }
+    echo "CLI Tools:"
+    check git
+    check gh
+    check just
+    echo ""
+    echo "Coding Agents:"
+    check claude
+    check copilot
+    check codex
+    echo ""
+    echo "GUI Apps:"
+    check_app "1Password"
+    check_app "ChatGPT"
+    check_app "Docker"
+    check_app "Rectangle"
+    check_app "Ecamm Live"
+    check_app "Audio Hijack"
+    check_app "Fission"
+    check_app "Loopback"
+    check_app "Windows App"
+    echo ""
+    echo "Config:"
+    if [ -n "$(git config --global user.name)" ]; then echo "  ✓ git user.name"; ((pass++)); else echo "  ✗ git user.name"; ((fail++)); fi
+    if [ -n "$(git config --global user.email)" ]; then echo "  ✓ git user.email"; ((pass++)); else echo "  ✗ git user.email"; ((fail++)); fi
+    if [ "$(git config --global core.ignorecase)" = "false" ]; then echo "  ✓ git core.ignorecase=false"; ((pass++)); else echo "  ✗ git core.ignorecase"; ((fail++)); fi
+    echo ""
+    echo "Result: $pass passed, $fail failed"
