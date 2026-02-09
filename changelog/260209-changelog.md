@@ -23,3 +23,7 @@
 - Created `notes/applications.md` — central app install list (brew-first)
 - Updated `AGENTS.md` — added justfile, applications.md, brew preference
 - Created GitHub repo `asw101/macos-new` and pushed
+- Created `notes/macos.md` — macOS system settings (keyboard remapping, Dock, screenshots, etc.)
+- Set screenshots to save to `~/Downloads`
+- Set `git config --global core.ignorecase false` for case-sensitive file tracking
+- Updated `justfile` git-config recipe with `core.ignorecase false`
