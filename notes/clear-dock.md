@@ -28,6 +28,12 @@ killall Dock
 
 > The Dock will briefly disappear and reappear empty (only Finder and Trash remain since those can't be removed).
 
+## Auto-hide the Dock
+
+```bash
+defaults write com.apple.dock autohide -bool true && killall Dock
+```
+
 ## Disable "Show recent applications in Dock"
 
 ```bash

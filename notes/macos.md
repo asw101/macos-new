@@ -20,6 +20,12 @@ Or via CLI (see `notes/clear-dock.md`):
 defaults write com.apple.dock show-recents -bool false && killall Dock
 ```
 
+Auto-hide the Dock:
+
+```bash
+defaults write com.apple.dock autohide -bool true && killall Dock
+```
+
 ## Trackpad
 
 - **System Settings** → **Trackpad**

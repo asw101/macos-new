@@ -24,11 +24,12 @@ setup-git: gh-login git-config
 setup-prompt:
     echo "export PROMPT='\$ '" >> ~/.zshrc && source ~/.zshrc
 
-# clear all items from the Dock
+# clear all items from the Dock and auto-hide it
 clear-dock:
     defaults write com.apple.dock persistent-apps -array
     defaults write com.apple.dock persistent-others -array
     defaults write com.apple.dock show-recents -bool false
+    defaults write com.apple.dock autohide -bool true
     killall Dock
 
 # install CLI tools
