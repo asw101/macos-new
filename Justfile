@@ -30,6 +30,7 @@ clear-dock:
     defaults write com.apple.dock persistent-others -array
     defaults write com.apple.dock show-recents -bool false
     defaults write com.apple.dock autohide -bool true
+    defaults write com.apple.dock minimize-to-application -bool true
     killall Dock
 
 # install CLI tools

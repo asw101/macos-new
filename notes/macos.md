@@ -26,6 +26,12 @@ Auto-hide the Dock:
 defaults write com.apple.dock autohide -bool true && killall Dock
 ```
 
+Minimize windows into their application icon:
+
+```bash
+defaults write com.apple.dock minimize-to-application -bool true && killall Dock
+```
+
 ## Text Input — Disable Auto-Correct & Smart Substitutions
 
 Disable auto-correct, auto-capitalization, smart quotes, smart dashes, and auto-period:
