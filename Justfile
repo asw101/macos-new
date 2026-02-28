@@ -54,6 +54,11 @@ install-rosetta:
 setup-screenshots:
     defaults write com.apple.screencapture location ~/Downloads && killall SystemUIServer
 
+# symlink VS Code Insiders binary to 'code' on PATH
+symlink-code:
+    sudo ln -sf "/Applications/Visual Studio Code - Insiders.app/Contents/Resources/app/bin/code" /usr/local/bin/code
+    @echo "Symlinked /usr/local/bin/code → VS Code Insiders"
+
 # install everything (CLI + agents + apps)
 install-all: install-cli install-agents install-apps
 

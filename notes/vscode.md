@@ -1,5 +1,21 @@
 # VS Code Insiders Setup
 
+## CLI Setup
+
+The VS Code Insiders app bundle includes a `code` binary. Symlink it onto your PATH so you can open files/folders from the terminal:
+
+```bash
+just symlink-code
+```
+
+Or manually:
+
+```bash
+sudo ln -sf "/Applications/Visual Studio Code - Insiders.app/Contents/Resources/app/bin/code" /usr/local/bin/code
+```
+
+> **Note:** The binary inside the Insiders bundle is called `code`, not `code-insiders`.
+
 ## Extensions
 
 Install via the command palette or CLI:
