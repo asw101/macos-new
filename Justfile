@@ -50,6 +50,15 @@ install-apps:
 install-rosetta:
     softwareupdate --install-rosetta --agree-to-license
 
+# disable auto-correct, auto-capitalization, smart quotes/dashes/periods
+disable-autocorrect:
+    defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+    defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+    defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+    defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+    defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
+    @echo "Disabled auto-correct, auto-capitalization, smart quotes/dashes/periods"
+
 # save screenshots to Downloads
 setup-screenshots:
     defaults write com.apple.screencapture location ~/Downloads && killall SystemUIServer

@@ -26,6 +26,26 @@ Auto-hide the Dock:
 defaults write com.apple.dock autohide -bool true && killall Dock
 ```
 
+## Text Input — Disable Auto-Correct & Smart Substitutions
+
+Disable auto-correct, auto-capitalization, smart quotes, smart dashes, and auto-period:
+
+```bash
+just disable-autocorrect
+```
+
+Or manually via **System Settings → Keyboard → Text Input → Input Sources → Edit…** and uncheck all options.
+
+Or via CLI:
+
+```bash
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
+```
+
 ## Trackpad
 
 - **System Settings** → **Trackpad**
