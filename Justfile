@@ -44,9 +44,9 @@ install-agents:
 # install GUI apps via brew cask
 install-apps:
     brew install --cask visual-studio-code@insiders microsoft-edge
-    brew install --cask 1password chatgpt docker rectangle
+    brew install --cask 1password chatgpt claude docker rectangle
     brew install --cask ecamm-live audio-hijack fission loopback macwhisper
-    brew install --cask ghostty losslesscut
+    brew install --cask ghostty losslesscut obsidian
 
 # install Rosetta 2 (needed for Docker x86_64 emulation)
 install-rosetta:
@@ -109,6 +109,7 @@ check:
     echo "GUI Apps:"
     check_app "1Password"
     check_app "ChatGPT"
+    check_app "Claude"
     check_app "Docker"
     check_app "Rectangle"
     check_app "Ecamm Live"
@@ -119,6 +120,7 @@ check:
     check_app "Loopback"
     check_app "MacWhisper"
     check_app "Microsoft Edge"
+    check_app "Obsidian"
     check_app "Visual Studio Code - Insiders"
     check_app "Windows App"
     echo ""
