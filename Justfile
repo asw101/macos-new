@@ -46,6 +46,7 @@ install-apps:
     brew install --cask visual-studio-code@insiders microsoft-edge
     brew install --cask 1password chatgpt docker rectangle
     brew install --cask ecamm-live audio-hijack fission loopback macwhisper
+    brew install --cask ghostty losslesscut
 
 # install Rosetta 2 (needed for Docker x86_64 emulation)
 install-rosetta:
@@ -111,6 +112,8 @@ check:
     check_app "Docker"
     check_app "Rectangle"
     check_app "Ecamm Live"
+    check_app "Ghostty"
+    check_app "LosslessCut"
     check_app "Audio Hijack"
     check_app "Fission"
     check_app "Loopback"
